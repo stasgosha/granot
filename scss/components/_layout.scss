@@ -1,0 +1,94 @@
+*,
+*:before,
+*:after{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	position: relative;
+	background: url(../img/backgrounds/bg.jpg) no-repeat center top / cover;
+
+	@media screen and (min-width: 1025px){
+		background-attachment: fixed;
+	}
+
+	&.overflow{
+		overflow: hidden;
+	}
+
+	&.modal-visible{
+		overflow: hidden;
+		height: 100vh;
+	}
+
+	img{
+		max-width: unset;
+	}
+}
+
+ul, ol{
+	list-style: none;
+}
+
+button{
+	background: transparent;
+	border: 0;
+	cursor: pointer;
+	appearance: none;
+	font-family: inherit;
+	box-shadow: none;
+	border-radius: 0;
+	// outline: none !important;
+}
+
+a, button{
+	text-decoration: none;
+	transition: all var(--t);
+	// outline: none !important;
+	border: none;
+}
+
+picture, iframe, figure{
+	display: block;
+}
+
+.wrapper{
+	min-height: 100vh;
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+
+	.page-content{
+	}
+
+	.footer{
+		margin-top: auto;
+	}
+}
+
+.container{
+	width: 100%;
+	padding: 0 var(--side-padding);
+	margin: 0 auto;
+}
+
+.visually-hidden{
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+
+.wpcf7{
+	html[dir="rtl"] &{
+		direction: rtl !important;
+	}
+}

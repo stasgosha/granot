@@ -1,0 +1,28 @@
+:root{
+	// Fonts
+	--main-font:  'Heebo', Arial, sans-serif;
+	--second-font: 'Heebo', Arial, sans-serif;
+
+	// Colors
+	--orange: #FF8625;
+	--purple: #84499C;
+	--green: #449C3B;
+	--brown: #570404;
+
+	// Params
+	--t: .3s; // animation duration
+	--r: 0; // default border radius
+
+	--text-color: var(--brown);
+	--text-light: var(--brown);
+	--text-dark: var(--brown);
+
+	--primary: var(--orange);
+	--accent: var(--purple);
+
+	--side-padding: 8.8889vw;
+
+	@media screen and (min-width: 992px){
+		--side-padding: 7.2917vw;
+	}
+}

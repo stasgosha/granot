@@ -1,0 +1,32 @@
+.contact-us-section{
+	height: 950px;
+	position: relative;
+	padding-top: 211px;
+	padding-bottom: 290px;
+
+	.section-bg{
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		left: 0;
+		top: 0;
+
+		img{
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			left: 0;
+			top: 0;
+			object-fit: cover;
+			object-position: center center;
+		}
+	}
+
+	.section-text{
+		width: 693px;
+		height: 450px;
+		background: url(../img/backgrounds/contacts-text-bg.png) no-repeat left center / auto 100%;
+		margin-right: calc(var(--side-padding) * -1);
+		padding-right: var(--side-padding);
+	}
+}
