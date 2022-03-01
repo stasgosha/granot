@@ -1,7 +1,7 @@
 .btn{
 	text-align: center;
-	padding: 0.5208vw 1.5625vw;
-	min-height: 3.4375vw;
+	padding: 10px 30px;
+	min-height: 50px;
 
 	border: 0;
 	border-radius: 0;
@@ -15,15 +15,17 @@
 	appearance: none;
 	white-space: nowrap;
 
-	background: var(--accent);
+	background: var(--green);
 	color: #fff;
 
 	position: relative;
 
 	font-family: var(--main-font);
-	font-size: 2.2917vw;
-	line-height: 1.1;
-	font-weight: 400;
+	font-size: 20px;
+	line-height: 1.25;
+	font-weight: 900;
+
+	box-shadow: 0 0.1563vw 0.3125vw rgba(#000, .5);
 
 	@media screen and (max-width: 991px){
 		min-height: 12.5000vw;
@@ -32,35 +34,9 @@
 		font-weight: bold;
 	}
 
-	&:before{
-		content: '';
-		display: block;
-		width: 0;
-		height: 100%;
-		position: absolute;
-		right: 0;
-		top: 0;
-		transition: all var(--t);
-		background: var(--primary);
-	}
-
-	.btn-text{
-		transition: all var(--t);
-		position: relative;
-		z-index: 3;
-		transform: translateY(0.1em);
-	}
-
 	&:hover,
 	&:focus{
 		outline: none;
-
-		&:before{
-			width: 100%;
-		}
-
-		.btn-text{
-			font-weight: bold;
-		}
+		background: darken(#449C3B, 10%);
 	}
 }

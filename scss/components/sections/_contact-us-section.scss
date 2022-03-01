@@ -1,8 +1,8 @@
 .contact-us-section{
-	height: 950px;
+	height: 49.4792vw;
 	position: relative;
-	padding-top: 211px;
-	padding-bottom: 290px;
+	padding-top: 10.9896vw;
+	padding-bottom: 15.1042vw;
 
 	.section-bg{
 		width: 100%;
@@ -23,10 +23,64 @@
 	}
 
 	.section-text{
-		width: 693px;
-		height: 450px;
+		width: 36.0938vw;
+		height: 23.4375vw;
 		background: url(../img/backgrounds/contacts-text-bg.png) no-repeat left center / auto 100%;
 		margin-right: calc(var(--side-padding) * -1);
 		padding-right: var(--side-padding);
+		padding-top: 6.2500vw;
+		padding-left: 8.3333vw;
+
+		h2{
+			font-size: 2.6042vw;
+			line-height: 1.2;
+			font-weight: bold;
+			color: var(--text-color);
+		}
+	}
+
+	.section-form{
+		width: calc(100% - 1.0417vw * 2);
+		position: absolute;
+		left: 50%;
+		transform: translateX(-50%);
+		bottom: 2.0833vw;
+		z-index: 2;
+		background: var(--primary);
+		border: 0.1563vw solid #fff;
+		padding: 1.8750vw 6.2500vw 1.8750vw 5.2083vw;
+		color: #fff;
+
+		&:after{
+			content: '';
+			display: block;
+			width: calc(100% - 0.5208vw * 2);
+			height: calc(100% - 0.5208vw * 2);
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			transform: translate(-50%, -50%);
+			border: 1px dashed #fff;
+			pointer-events: none;
+		}
+	}
+}
+
+.contacts-form{
+	.form-inner{
+		display: grid;
+		grid-template-columns: 1fr 20.7292vw min-content;
+		grid-gap: 0.8333vw;
+		align-items: center;
+	}
+
+	.form-fields{
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		grid-gap: 0.7813vw;
+	}
+
+	.btn{
+		width: 100%;
 	}
 }
