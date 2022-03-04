@@ -33,6 +33,11 @@ document.addEventListener('DOMContentLoaded', function(){
 
 	menuItems.eq(0).addClass('active');
 
+	$(".wpcf7-form input").attr('autocomplete', 'off');
+
+	// Input mask
+	$('input[type="tel"]').mask("99-9999999", {autoclear: false});
+
 	// top-nav
 	$('.top-nav a').each(function(i, el){
 		$(el).attr('data-text', $(el).text()).wrapInner('<div class="link-text"></div>');
@@ -90,13 +95,26 @@ document.addEventListener('DOMContentLoaded', function(){
 			slidesToScroll: 1,
 			arrows: false,
 			dots: false,
-			asNavFor: previewsSlider
+			centerMode: true,
+			centerPadding: 0,
+			asNavFor: previewsSlider,
+			responsive: [
+				{
+					breakpoint: 992,
+					settings: {
+						slidesToShow: 3,
+						dots: true
+					}
+				}
+			]
 		});
 
 		previewsSlider.slick({
-			rtl: isRTL,
+			// rtl: isRTL,
 			vertical: true,
 			infinite: true,
+			centerMode: true,
+			centerPadding: 0,
 			slidesToShow: 3,
 			slidesToScroll: 1,
 			arrows: false,
@@ -128,11 +146,11 @@ document.addEventListener('DOMContentLoaded', function(){
 			return false;
 		}
 
-		let topNavHeight = 0;
+		let topNavHeight = 3.1250 / 100 * $(window).width();
 
-		// if ($(window).width() < 992) {
-		// 	topNavHeight = 40;
-		// }
+		if ($(window).width() < 992) {
+			topNavHeight = 0;
+		}
 
 		$('html, body').animate({
 			scrollTop: $($.attr(this, 'href')).offset().top - topNavHeight

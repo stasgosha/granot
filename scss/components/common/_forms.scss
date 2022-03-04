@@ -16,12 +16,11 @@
 		background: transparent;
 		text-align: center;
 		color: #fff;
-		// color: var(--accent);
 
-		// @media screen and (max-width: 991px){
-		// 	height: 11.1111vw;
-		// 	font-size: 6.9444vw;
-		// }
+		@media screen and (max-width: 991px){
+			height: 12.2222vw;
+			font-size: 5.5556vw;
+		}
 
 		&:focus{
 			border-bottom-color: var(--green);
@@ -71,12 +70,57 @@
 		display: block;
 	}
 
+	.form-field{
+		position: relative;
+
+		.wpcf7-form-control-wrap{
+			display: block;
+		}
+	}
+
+	.wpcf7-not-valid-tip{
+		font-size: 1.0417vw;
+		line-height: 1.2;
+		text-align: center;
+		color: #fff;
+		
+		@media screen and (min-width: 992px){
+			position: absolute;
+			left: 50%;
+			transform: translateX(-50%);
+			top: calc(100% + 0.4167vw);
+			width: 100%;
+		}
+
+		@media screen and (max-width: 991px){
+			display: block;
+			margin-top: 1.3889vw;
+			font-size: 5.5556vw;
+		}
+	}
+
 	.wpcf7-list-item{
 		margin: 0;
 	}
 
 	p{
 		margin-bottom: 0;
+	}
+}
+
+html body .wpcf7 .wpcf7-response-output{
+	font-size: 1.0417vw;
+	line-height: 1.2;
+	color: #fff;
+	padding: 0;
+	margin: 2vw 0 0;
+	border: 0;
+	text-align: center;
+	display: none !important;
+
+	@media screen and (max-width: 991px){
+		font-size: 5.5556vw;
+		margin-top: 6.6667vw;
 	}
 }
 
@@ -104,8 +148,12 @@
 			cursor: pointer;
 			display: block;
 			color: #fff;
-			white-space: nowrap;
+			// white-space: nowrap;
 			// padding-top: 0.1em;
+
+			@media screen and (min-width: 992px){
+				width: 7.3vw;
+			}
 
 			&:before,
 			&:after{
@@ -132,23 +180,32 @@
 				opacity: 0;
 			}
 
-			// @media screen and (max-width: 991px){
-			// 	padding-right: 9vw; //12.2222vw
-			// 	font-size: 5.0000vw;
-			// 	line-height: 6.3889vw;
+			@media screen and (max-width: 991px){
+				padding-right: 11.9444vw;
+				font-size: 4.4444vw;
+				line-height: 8.6111vw;
+				color: #fff;
+				margin-right: 5.0000vw;
 
-			// 	&:before{
-			// 		width: 6.3889vw;
-			// 		height: 6.3889vw;
-			// 	}
+				br{
+					display: none;
+				}
 
-			// 	&:after{
-			// 		width: 6.6667vw;
-			// 		height: 7.7778vw;
-			// 		right: -0.8333vw;
-			// 		top: -0.8333vw;
-			// 	}
-			// }
+				&:before{
+					width: 8.6111vw;
+					height: 8.6111vw;
+					border: 1px solid #fff;
+					top: 0;
+				}
+
+				&:after{
+					width: 9.1667vw;
+					height: 9.4444vw;
+					right: -2.2222vw;
+					top: -2.7778vw;
+					background: url("data:image/svg+xml,%3Csvg fill='none' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 33 34'%3E%3Cpath d='m.34 21.76 12 11L31.84.26' stroke='%23fff'/%3E%3C/svg%3E") no-repeat center center / contain;
+				}
+			}
 		}
 
 		&:checked{

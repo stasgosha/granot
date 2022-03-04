@@ -14,6 +14,10 @@ body{
 		background-attachment: fixed;
 	}
 
+	@media screen and (max-width: 991px){
+		background: linear-gradient(to right, #449C3B 0%, #449C3B 11.1111vw, transparent 11.1111vw, transparent calc(100% - 11.1111vw), #449C3B calc(100% - 11.1111vw), #449C3B 100%), url(../img/backgrounds/bg.jpg) no-repeat center top / cover;
+	}
+
 	&.overflow{
 		overflow: hidden;
 	}

@@ -77,23 +77,23 @@
 }
 
 .slick-dots{
-	bottom: -4.4444vw !important;
+	bottom: -8.6111vw !important;
 	display: flex !important;
 	justify-content: center;
 	align-items: center;
 	
 	li{
-		margin: 0 0.8333vw;
-		width: 1.6667vw;
-		height: 1.6667vw;
+		margin: 0 0.5556vw;
+		width: 3.8889vw;
+		height: 3.8889vw;
 		display: flex;
 		align-items: center;
 		justify-content: center;
 
 		button{
-			width: 1.6667vw;
-			height: 1.6667vw;
-			background: #C8C8C8;
+			width: 3.8889vw;
+			height: 3.8889vw;
+			background: #A2CF44;
 			padding: 0;
 			opacity: 1;
 			transition: all var(--t);
@@ -106,14 +106,14 @@
 
 			&:hover{
 				opacity: 1;
-				background: var(--text-color);
+				background: var(--primary);
 			}
 		}
 
 		&.slick-active{
 			button{
 				opacity: 1;
-				background: var(--text-color);
+				background: var(--primary);
 			}
 		}
 	}

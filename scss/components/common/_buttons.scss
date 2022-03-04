@@ -1,7 +1,7 @@
 .btn{
 	text-align: center;
-	padding: 10px 30px;
-	min-height: 50px;
+	padding: 0.5208vw 1.5625vw;
+	min-height: 2.6042vw;
 
 	border: 0;
 	border-radius: 0;
@@ -21,22 +21,23 @@
 	position: relative;
 
 	font-family: var(--main-font);
-	font-size: 20px;
+	font-size: 1.0417vw;
 	line-height: 1.25;
 	font-weight: 900;
 
 	box-shadow: 0 0.1563vw 0.3125vw rgba(#000, .5);
 
 	@media screen and (max-width: 991px){
-		min-height: 12.5000vw;
-		padding: 0.5vw 6.6667vw 1.3889vw;
-		font-size: 9.7222vw;
+		min-height: 13.8889vw;
+		padding: 0.5vw 6.9444vw 0.5vw;
+		font-size: 5.5556vw;
 		font-weight: bold;
+		box-shadow: 0 0.8333vw 1.6667vw rgba(#000, .5);
 	}
 
 	&:hover,
 	&:focus{
 		outline: none;
-		background: darken(#449C3B, 10%);
+		background: var(--accent);
 	}
 }
